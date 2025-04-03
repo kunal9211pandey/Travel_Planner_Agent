@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Planner AI</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Travel Planner AI</h1>
+        <div id="chat-container">
+            <div id="chat-log"></div>
+            <input type="text" id="user-input" placeholder="Enter your travel preferences">
+            <button id="send-button">Send</button>
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function() {
+            $('#send-button').click(function() {
+                var userInput = $('#user-input').val();
+                $('#chat-log').append('<div class="user-message">User: ' + userInput + '</div>');
+                $('#user-input').val('');
+
+                $.ajax({
+                    url: '/',
+                    type: 'POST',
+                    data: { user_input: userInput },
+                    success: function(response) {
+                        console.log(response);  // Log the response
+                        var botResponse = JSON.stringify(response, null, 2);  // Pretty print the JSON
+                        $('#chat-log').append('<div class="bot-message">Bot: ' + botResponse + '</div>');
+                    },
+                    error: function(error) {
+                        console.log(error);
+                        $('#chat-log').append('<div class="error-message">Error: Could not get response.</div>');
+                    }
+                });
+            });
+
+            $('#user-input').keypress(function(event) {
+                if (event.which == 13) {  // Enter key
+                    $('#send-button').click();
+                }
+            });
+        });
+    </script>
+</body>
+</html>

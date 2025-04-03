@@ -1,0 +1,42 @@
+[
+    {
+        "name": "Paris",
+        "country": "France",
+        "tags": ["romantic", "culture", "food"],
+        "budget_level": "high",
+        "ideal_duration": [3, 7],
+        "best_seasons": ["spring", "fall"]
+    },
+    {
+        "name": "Tokyo",
+        "country": "Japan",
+        "tags": ["modern", "culture", "shopping"],
+        "budget_level": "high",
+        "ideal_duration": [5, 10],
+        "best_seasons": ["spring", "fall"]
+    },
+    {
+        "name": "Rome",
+        "country": "Italy",
+        "tags": ["historic", "culture", "food"],
+        "budget_level": "medium",
+        "ideal_duration": [3, 5],
+        "best_seasons": ["spring", "fall"]
+    },
+    {
+        "name": "Barcelona",
+        "country": "Spain",
+        "tags": ["beach", "culture", "nightlife"],
+        "budget_level": "medium",
+        "ideal_duration": [4, 7],
+        "best_seasons": ["spring", "summer"]
+    },
+    {
+        "name": "New York",
+        "country": "USA",
+        "tags": ["urban", "culture", "shopping"],
+        "budget_level": "high",
+        "ideal_duration": [5, 7],
+        "best_seasons": ["spring", "fall"]
+    }
+]

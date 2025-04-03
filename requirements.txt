@@ -1,0 +1,5 @@
+langchain
+langchain_openai
+Flask
+pytest
+python-dotenv
