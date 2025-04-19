@@ -1,41 +1,41 @@
 # Travel Planner AI Agent
 
-This project implements a Travel Planner AI agent using the LangGraph library. The agent assists users in planning trips by understanding their preferences, suggesting destinations, creating itineraries, and answering follow-up questions. [cite: 1, 2]
+This project implements a Travel Planner AI agent using the LangGraph library. The agent assists users in planning trips by understanding their preferences, suggesting destinations, creating itineraries, and answering follow-up questions. 
 
 ## Overview
 
-The Travel Planner AI Agent leverages LangGraph to create a multi-step reasoning workflow for trip planning. It interacts with the user to gather preferences, suggests destinations based on those preferences, generates detailed itineraries, and provides helpful responses to user queries. [cite: 2, 3]
+The Travel Planner AI Agent leverages LangGraph to create a multi-step reasoning workflow for trip planning. It interacts with the user to gather preferences, suggests destinations based on those preferences, generates detailed itineraries, and provides helpful responses to user queries.
 
 ## Core Features
 
-* **Understand User Preferences:** Extracts key travel preferences from user input, including budget, duration, and interests. [cite: 3]
-* **Suggest Destinations:** Recommends appropriate travel destinations based on the user's stated preferences. [cite: 3]
+* **Understand User Preferences:** Extracts key travel preferences from user input, including budget, duration, and interests.
+* **Suggest Destinations:** Recommends appropriate travel destinations based on the user's stated preferences. 
 * **Create Itineraries:** Generates detailed, day-by-day travel plans. [cite: 3]
-* **Answer Follow-up Questions:** Provides responses to user questions and requests for modifications to the suggested travel plans. [cite: 3]
+* **Answer Follow-up Questions:** Provides responses to user questions and requests for modifications to the suggested travel plans. 
 
 ## Technologies Used
 
-* **LangGraph:** Used to construct the multi-step reasoning workflow. [cite: 3, 1]
-* **LangChain:** Facilitates integration with LLMs. [cite: 11]
-* **OpenAI API:** Provides access to the LLM. [cite: 11]
-* **Python:** The primary programming language. [cite: 4]
-* **Flask:** Used to create a basic web application. [cite: 4]
-* **JSON:** Used for the mock destination database. [cite: 4, 8, 9]
+* **LangGraph:** Used to construct the multi-step reasoning workflow. 
+* **LangChain:** Facilitates integration with LLMs. 
+* **OpenAI API:** Provides access to the LLM. 
+* **Python:** The primary programming language. 
+* **Flask:** Used to create a basic web application. 
+* **JSON:** Used for the mock destination database. 
 
 ## Approach
 
 The project is structured as follows:
 
-* **LangGraph Workflow:** A directed graph is implemented using LangGraph, where each node represents a step in the travel planning process. [cite: 7]
-* **State Management:** User preferences and planning progress are tracked using a state object. [cite: 7]
-* **External Tools:** The agent interacts with a mock destination database and a mock weather API to provide relevant information. [cite: 3]
+* **LangGraph Workflow:** A directed graph is implemented using LangGraph, where each node represents a step in the travel planning process. 
+* **State Management:** User preferences and planning progress are tracked using a state object. 
+* **External Tools:** The agent interacts with a mock destination database and a mock weather API to provide relevant information.  
 
 The main steps in the workflow are:
 
-1.  **Preference Extraction:** The `PreferenceExtractor` node extracts travel preferences from the user's input. [cite: 7]
-2.  **Destination Finding:** The `DestinationFinder` node suggests destinations based on the extracted preferences. [cite: 7]
-3.  **Itinerary Creation:** The `ItineraryCreator` node generates a detailed itinerary. [cite: 7]
-4.  **Follow-up Handling:** The `FollowUpHandler` node addresses any follow-up questions from the user. [cite: 7]
+1.  **Preference Extraction:** The `PreferenceExtractor` node extracts travel preferences from the user's input. 
+2.  **Destination Finding:** The `DestinationFinder` node suggests destinations based on the extracted preferences. 
+3.  **Itinerary Creation:** The `ItineraryCreator` node generates a detailed itinerary. 
+4.  **Follow-up Handling:** The `FollowUpHandler` node addresses any follow-up questions from the user. 
 
 ## Project Structure
 
