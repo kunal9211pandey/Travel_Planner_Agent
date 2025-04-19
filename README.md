@@ -10,7 +10,7 @@ The Travel Planner AI Agent leverages LangGraph to create a multi-step reasoning
 
 * **Understand User Preferences:** Extracts key travel preferences from user input, including budget, duration, and interests.
 * **Suggest Destinations:** Recommends appropriate travel destinations based on the user's stated preferences. 
-* **Create Itineraries:** Generates detailed, day-by-day travel plans. [cite: 3]
+* **Create Itineraries:** Generates detailed, day-by-day travel plans. 
 * **Answer Follow-up Questions:** Provides responses to user questions and requests for modifications to the suggested travel plans. 
 
 ## Technologies Used
